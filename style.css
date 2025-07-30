@@ -1,0 +1,189 @@
+/* Formato Gerneral*/
+
+*{
+   font-family: Arial, Helvetica, sans-serif;
+
+}
+
+p{
+    color: black;
+    font-size: 20px;
+}
+
+h2,h3{
+    font-size: 25px;
+    text-align: center;
+}
+
+
+/* Layout general usando Grid*/
+.grid-layout{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "aside main"
+    "footer footer";
+    grid-template-columns: 450px 1fr;
+    gap: 10px;
+    padding: 20px;
+    background-color: rgb(233, 233, 237);
+}
+
+
+/* Pagina principal */
+
+header{
+    grid-area: header;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: rgb(249, 246, 246);
+    font-weight: bold;
+    height: 90px;
+    background-color:  rgb(6, 9, 99);
+}
+
+/* Barra de navegación*/
+nav{
+    grid-area: nav;
+    background-color: rgb(6, 9, 99);
+    padding: 20px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;         
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  gap: 10px; 
+
+}
+
+nav a{
+    color: rgb(255, 255, 240);
+    text-decoration: none;
+}
+
+nav a:hover{
+    box-shadow: 0 4px 8px #aaa;
+}
+
+/* imagenes */
+
+
+.card{
+    text-align: center;
+}
+
+.card a{
+    text-align: justify;
+}
+
+.card img{
+    height: auto;
+    width: 400px;
+   
+    
+}
+
+.card img:hover{
+
+    box-shadow: 0 4px 8px #b605ec;
+    
+}
+
+
+
+
+/* estilizado del main*/
+
+main{
+    grid-area: main;
+    padding: 20px;
+    background-color: rgb(139, 221, 221);
+   
+
+}
+
+/* estilizado del aside*/
+
+aside{
+    grid-area: aside;
+    padding: 30px;
+    background-color: rgb(216, 191, 240);
+    text-align: center;
+}
+
+
+/*estilizado del footer*/
+
+footer{
+    grid-area: footer;
+    padding: 20px;
+    background-color:  rgb(6, 7, 19);
+    color: aliceblue;
+    text-align: center;
+    font-weight: bold;
+}
+
+.enlace_form{
+    background-color: #20afa6;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    
+
+}
+
+
+/* Formulario */
+
+.titulo_formulario{
+    color: black;
+    text-align: center;
+}
+
+.mi-formulario{
+    text-align: center;
+    background-color: rgb(80, 193, 193);
+    font-size: 20px;
+    margin: 80px auto;
+    width: 500px;         
+    height: 600px;         
+    padding: 20px;        
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+input[type="submit"]{
+    background-color: #e4e7f1;
+    color: black;
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.enlace-formu{
+   display: flex;
+    justify-content: center;
+    background-color: #e4e7f1;
+    border-radius: 10%;
+    width: 200px;
+    height: 40px;
+    margin: 0 auto;
+    padding: 5px;
+
+}
+
+.enlace-formu a{
+    color: black;
+    text-decoration: none;
+}
+
+
+

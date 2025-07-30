@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Página web UES</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Favicon_UES.png">
+</head>
+<body>
+     
+    <!-- Titulo del formulario-->
+    <h1 class="titulo_formulario">Formulario </h1>
+    <form class="mi-formulario">
+
+        <label for="nombre">Nombre completo:</label><br> 
+        <input type="text" id="nombre" name="nombre" placeholder="Escriba su  nombre" required><br><br> 
+        
+        <!-- Campo para escribir la edad --> 
+         <label for="nombre">Edad:</label><br> 
+        <input type="number" id="edad" name="edad" placeholder="20" required><br><br> 
+
+        <!-- Botones de opción (radio) para género --> 
+<label>Género:</label><br> 
+<input type="radio" id="masculino" name="genero" value="Masculino"> <label for="masculino">Masculino</label><br> 
+<input type="radio" id="femenino" name="genero" value="Femenino"> <label for="femenino">Femenino</label><br><br> 
+
+        <!-- Canpo para escribir el correo electronico-->
+        <label for="correo">Correo electrónico:</label><br> 
+        <input type="email" id="correo" name="correo" 
+        placeholder="correo@ejemplo.com" required><br><br><br>
+
+
+        <!-- Campo para escribir un mensaje por ejemplo una sugerencia--> 
+         <label for="mensaje">Mensaje:</label><br> 
+         <textarea id="mensaje" name="mensaje" rows="4" cols="30" placeholder="Escriba su mensaje aquí..."></textarea><br><br> 
+
+         <!-- Botón para enviar el formulario --> 
+          <input type="submit" value="Enviar"> 
+
+           <!-- Enlace para ingresar a la pagina principal-->
+   
+
+    </form>
+
+    <div class="enlace-formu" >
+    <a  href="/Paginaweb_UES/index.html">Regresar a la <br>pagina principal</a>
+    </div>
+
+   
+</body>
+</html>
